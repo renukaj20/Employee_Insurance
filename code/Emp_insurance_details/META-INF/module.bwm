@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_BIBb8Fj7Ee2zg8lPnAIGqA" targetNamespace="http://tns.tibco.com/bw/composite/Emp_insurance_details" name="Emp_insurance_details" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_kjm7Il0qEe2IMKjoFbBhqw" name="Insertemployee_insurance_detais" promote="ComponentEmployee_Insurance_Detais/Insertemployee_insurance_detais">
+    <sca:interface.wsdl xmi:id="_kjoJQV0qEe2IMKjoFbBhqw" interface="http://xmlns.example.com/20221105222454PLT#wsdl.interface(Insertemployee_insurance_detais)" scaext:wsdlLocation="../Processes/emp_insurance_details/Employee_Insurance_Detais.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_kjzvcF0qEe2IMKjoFbBhqw" name="RestService1" path="/Insertemployee_insurance_detais" docBasePath="http://localhost:7777/Emp_insurance_details" docResourcePath="Employee_Insurance_Detais" basePath="/" connector="HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/emp_insurance_details.Employee_Insurance_Detais-Employee_Insurance_Detais.json">
+      <operation xmi:id="_kkAjwF0qEe2IMKjoFbBhqw" operationName="post" nickname="post-Insertemployee_insurance_detais" httpMethod="POST" notes="postEmployee_Insurance_Detais" responseStyle="element" requestStyle="element" outputPartName="Employee_Insurance_DetaisResp">
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>xml</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_kjzvcV0qEe2IMKjoFbBhqw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_kkAjwV0qEe2IMKjoFbBhqw" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_B--5IFj7Ee2zg8lPnAIGqA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_DKkFj7Ee2zg8lPnAIGqA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_Fm0Fj7Ee2zg8lPnAIGqA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_HcAFj7Ee2zg8lPnAIGqA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_JRMFj7Ee2zg8lPnAIGqA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_LtcFj7Ee2zg8lPnAIGqA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_NioFj7Ee2zg8lPnAIGqA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_P-4Fj7Ee2zg8lPnAIGqA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_B_SbIFj7Ee2zg8lPnAIGqA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_kjmUEF0qEe2IMKjoFbBhqw" name="ComponentEmployee_Insurance_Detais" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kjmUEV0qEe2IMKjoFbBhqw" processName="emp_insurance_details.Employee_Insurance_Detais"/>
+    <sca:service xmi:id="_kjm7IF0qEe2IMKjoFbBhqw" name="Insertemployee_insurance_detais">
+      <sca:interface.wsdl xmi:id="_kjm7IV0qEe2IMKjoFbBhqw" interface="http://xmlns.example.com/20221105222454PLT#wsdl.interface(Insertemployee_insurance_detais)" scaext:wsdlLocation="../Processes/emp_insurance_details/Employee_Insurance_Detais.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

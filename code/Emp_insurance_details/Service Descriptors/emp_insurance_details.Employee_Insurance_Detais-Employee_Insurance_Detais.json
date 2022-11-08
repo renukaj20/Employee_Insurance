@@ -1,0 +1,68 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Employee_Insurance_Detais",
+    "description" : "Employee_Insurance_Detais service"
+  },
+  "host" : "localhost:8023",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/Insertemployee_insurance_detais" : {
+      "post" : {
+        "summary" : "postEmployee_Insurance_Detais",
+        "description" : "postEmployee_Insurance_Detais",
+        "operationId" : "post-Insertemployee_insurance_detais",
+        "consumes" : [ "application/xml" ],
+        "produces" : [ "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Emp_insurance_details"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a employeeResp to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/employeeResp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "employeeResp" : {
+      "type" : "object",
+      "required" : [ "Responsemsg" ],
+      "properties" : {
+        "Responsemsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_insurance_details" : {
+      "type" : "object",
+      "required" : [ "EMPID", "INSURANCE_NAME", "EMPNAME", "BENEFITS" ],
+      "properties" : {
+        "EMPID" : {
+          "type" : "string"
+        },
+        "EMPNAME" : {
+          "type" : "string"
+        },
+        "INSURANCE_NAME" : {
+          "type" : "string"
+        },
+        "BENEFITS" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

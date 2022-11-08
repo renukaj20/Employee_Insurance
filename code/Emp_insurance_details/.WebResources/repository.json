@@ -1,0 +1,17 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/emp_insurance_details.emp_insurance_details-emp_insurance_details.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_insurance_details.Employee_Insurance_Detais-Employee_Insurance_Detais.json",
+            "type": "generated"
+        }
+    ]
+}

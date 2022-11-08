@@ -1,0 +1,19 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/Emp_insurance_details/Service Descriptors/emp_insurance_details.emp_insurance_details-emp_insurance_details.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_insurance_details/Service Descriptors/emp_insurance_details.Employee_Insurance_Detais-Employee_Insurance_Detais.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/Common/Schemas/emp_personal.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    },
+    {
+        "jsonSchemaLocation": "/Emp_insurance_details/Service Descriptors/emp_insurance_details.Employee_Insurance_Detais-Employee_Insurance_Detais.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/Common/Schemas/emp_personal.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    }
+]}
